@@ -1,5 +1,5 @@
 import time
-import qrcode 
+import qrcode
 
 while True:
     print("Bem vindo ao cinema CineUni")
@@ -62,7 +62,7 @@ while True:
     print(f'Forma de pagamento escolhida: {forma_pagamento_escolhida}')
 
     aguarde = 'Aguarde a Confirmação'
-    imagem= qrcode.make("Pagamento registrado!")
+    imagem = qrcode.make("Pagamento registrado!")
 
     if forma_pagamento_escolhida in ['Elo', 'Visa', 'Débito']:
         print('Insira seu cartão na máquina')
