@@ -18,7 +18,7 @@ while True:
     tipo_ingresso = 'Inteiro' if opcao_ingresso == '1' else 'Meia'
     valor_ingresso = ingressos[opcao_ingresso]
 
-    print(f"Opção de ingresso escolhida foi {
+    print (f"Opção de ingresso escolhida foi {
           tipo_ingresso}, no valor de R${valor_ingresso},00 cada")
 
     # Seleção da quantidade de ingresso
@@ -68,15 +68,12 @@ while True:
         print('Insira seu cartão na máquina')
         time.sleep(5)
         print('Digite sua senha')
-        time.sleep(5)
-        time.sleep(5)
+        time.sleep(10)
         print('Pagamento realizado com sucesso')
     else:
         print('Realize o pagamento com Pix. Aguarde o QR code aparecer na tela\n')
         imagem.save("pix.jpg")
-        time.sleep(1)
-        time.sleep(5)
-        time.sleep(5)
+        time.sleep(10)
         print('Pagamento realizado com sucesso')
 
     time.sleep(5)  # Espera 5 segundos para aprovar o pagamento
